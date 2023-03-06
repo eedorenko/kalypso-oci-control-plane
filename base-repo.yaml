@@ -3,7 +3,7 @@ kind: BaseRepo
 metadata:
   name: main
 spec:
-  repo: https://github.com/microsoft/kalypso-control-plane
+  repo: https://github.com/eedorenko/kalypso-oci-control-plane
   branch: main
   path: .
   commit: 42f2c201b96055faead8da72a126ec3e8fe30296
