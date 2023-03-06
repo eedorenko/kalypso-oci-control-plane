@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stage-config
+  labels:
+     platform-config: "true"
+data:
+  ENVIRONMENT: stage
+  SOME_COMMON_ENVIRONMENT_VARIABLE: "false"
