@@ -1,0 +1,12 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: SchedulingPolicy
+metadata:
+  name: uat-test-policy
+spec:
+  deploymentTargetSelector:
+    workspace: kaizen-app-team
+    labelSelector:
+      matchLabels:
+        purpose: uat-test
+  clusterTypeSelector:
+    labelSelector: {}
