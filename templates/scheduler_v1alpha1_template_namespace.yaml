@@ -10,10 +10,10 @@ spec:
       apiVersion: v1
       kind: Namespace
       metadata:
-        name: "{{ .Namespace}}" 
+        name: {{ .Namespace}} 
         labels:
-          environment: "{{ .Environment}}"
-          workspace: "{{ .Workspace}}"
-          workload: "{{ .Workload}}"
-          deploymentTarget: "{{ .DeploymentTargetName}}"
+          environment: {{ .Environment}}
+          workspace: {{ .Workspace}}
+          workload: {{ .Workload}}
+          deploymentTarget: {{ .DeploymentTargetName}}
           someLabel: some-value
