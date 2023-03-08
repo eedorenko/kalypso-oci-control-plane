@@ -6,4 +6,4 @@ spec:
   repo: https://github.com/eedorenko/kalypso-oci-control-plane
   branch: main
   path: .
-  commit: 2ea03ff8c8694e6324207cc899944649b3fc6ead
+  commit: 6c5f44ef3e834dab28b317b38cb7f510581b287c
