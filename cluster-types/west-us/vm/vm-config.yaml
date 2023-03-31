@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: large-config
+  name: vm-config
   labels:
      platform-config: "true"
-     cluster-type: large
+     cluster-type: vm
 data:
-  CLUSTER_NAME: Large  
+  CLUSTER_NAME: VM  
