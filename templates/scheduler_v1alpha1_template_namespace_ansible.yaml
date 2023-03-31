@@ -1,0 +1,15 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: Template
+metadata:
+  labels:
+  name: ansible-user
+spec:
+  type: namespace
+  manifests:
+    - |
+      ---
+      - hosts: localhost
+        tasks:
+        - name: create a user
+          ansible.builtin.user:
+              name: {{ .Environment}}-{{ .DeploymentTargetName}}
