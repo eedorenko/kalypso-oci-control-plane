@@ -13,3 +13,10 @@ spec:
         - name: create a user
           ansible.builtin.user:
               name: {{ .Environment}}-{{ .DeploymentTargetName}}
+        - name: cope platform configs
+            ansible.builtin.copy:
+                src: ./platform-config
+                dest: /home/{{ .Environment}}-{{ .DeploymentTargetName}}/platform-config
+                owner: {{ .Environment}}-{{ .DeploymentTargetName}}
+                group: {{ .Environment}}-{{ .DeploymentTargetName}}
+                mode: u+rw,g-wx,o-rwx
