@@ -11,4 +11,4 @@ spec:
   clusterTypeSelector:
     labelSelector:
       matchLabels:
-        type: vm
+        type: vm1
