@@ -1,4 +1,16 @@
+crontab -r
 1. Repos intro
 2. !!!!Show K8s flow (gitops repo folder, app gitops repo folder)
-3. Define a new cluster type
+    k port-forward svc/hello-world-service 9090:9090 -n dev-kaizen-app-team-hello-world-app-functional-test
+3. Show vm new cluster type. No workloads scheduled.
+4. Show new deployment target in app src
+5. Add new scheduling policy
+6. Show PR, show templates, Merge PR
+7. Onboard vm, show onboard.sh, show reconsile.sh
+8. Rebuild app
+9. Change platform config, merge PR
+9. merge PR, make sure new app is arrived, show new app on VM and 
+10. remove the policy
 
+Challenges
+Next Steps
