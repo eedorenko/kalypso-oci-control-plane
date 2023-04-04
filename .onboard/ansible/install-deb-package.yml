@@ -9,13 +9,13 @@
 - name: fetch package
   get_url:
     url: '{{package_storage_url}}'
-    dest: $HOME/'{{package_name}}'
+    dest: $HOME/{{package_name}}
   when: deb_package_check.changed
 
 - name: install application
   shell: |
     pkill {{command}}
     dpkg -x $HOME/{{package_name}} $HOME      
-    . $HOME/platform-config
+    . $HOME/platform-config.sh
     . ./{{app_config_file}}
     $HOME/usr/bin/{{command}} {{args}} &
