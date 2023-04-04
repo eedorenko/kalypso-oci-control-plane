@@ -2,7 +2,7 @@ apiVersion: scheduler.kalypso.io/v1alpha1
 kind: Template
 metadata:
   labels:
-    someLabel: "true"
+    someLabel: "false"
   name: argocd
 spec:
   type: reconciler
