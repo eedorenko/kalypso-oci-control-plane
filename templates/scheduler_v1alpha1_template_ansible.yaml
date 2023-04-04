@@ -17,4 +17,4 @@ spec:
             minute: "*/1"
             user: {{ .Environment}}-{{ .DeploymentTargetName}}
             job: |
-              ansible-pull -o -U {{ .Manifests.repo}} -C {{ .Manifests.branch}} {{ .Manifests.path}} > $HOME/ansible-pull-{{ .DeploymentTargetName}}.log
+              ansible-pull -o -U {{ .Manifests.repo}} -C {{ .Manifests.branch}} {{ .Manifests.path}} > $HOME/ansible-pull-{{ .DeploymentTargetName}}.log 2>$HOME/ansible-pull-{{ .DeploymentTargetName}}.err 
