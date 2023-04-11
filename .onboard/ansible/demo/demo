@@ -9,8 +9,38 @@ crontab -r
 7. Onboard vm, show onboard.sh, show reconsile.sh
 8. Rebuild app
 9. Change platform config, merge PR
-9. merge PR, make sure new app is arrived, show new app on VM and 
+9. merge PR, make sure new app is arrived, show new app on VM and on K8s
 10. remove the policy
 
 Challenges
 Next Steps
+   - demo to customer
+   - write up on how it works 
+   - reference whole solution in SolutionOps playbook
+   - integrate with the engagement scope
+   - work on observability
+   - secrets/tokens
+
+
+ - Next steps
+ - GH / Azdo
+ - Your application + Kalypso
+ - Observability with the existing + Kalypso
+ - ARG / Database
+ - SME Request
+
+
+
+
+ Features/User Stories:        
+   - Working solution on GitHub      
+      - Prepare GH repos (Platform, Application) to work with - can be cloned from an existing Hello World sample
+      - Add two more microservices
+      - Provision resources in Azure - K8s clusters, VM
+   - Observability Hub
+     - Design data structure in the central storage. Understand which data is coming from VM/Cluster and which data is coming from Kalypso
+     - Implement an agent working on VM and reporting to the central storage (ARG)
+     - Implement a controller working on Kalypso control-plane and reporting to the central storage (ARG)
+   - Dashboards 
+     - Design dashboard(s) we want to provide out-of-the box
+     - Implement Dashboards   
